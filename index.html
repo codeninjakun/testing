@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newStyle.css">
+    <title>My Library</title>
+</head>
+<body>
+    <!-- We need a Heading, small line/Paragraph and button -->
+    <header>
+        <h1> A Simple Library</h1>
+        <p id="subHeading">With local storage. By Sahil Zilka</p>
+    </header>
+    <!-- Main tag is used to make content more accessible to the browser
+         it will contain all main components of the page
+     -->
+    <main>
+        <button class="new">Add new book</button>
+        <div class="table">
+            <table>
+                <!-- thead means table header row to contain heading -->
+                <thead>
+                    <!-- tr means table row which contains the rows of the table -->
+                    <tr>
+                        <!-- th  means table heading  -->
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <!-- tbdoy means table body -->
+                <tbody>
+                    <!-- td  means data in a cell of the table -->
+                    <td>TitleData</td>
+                    <td>AuthorData</td>
+                    <td>PagesData</td>
+                    <td>ReadData</td>
+                    <td><button>Change Read status</button></td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tbody>
+            </table>
+        </div>
+        <div class="form hidden">
+            <h2>Adding/Editing a Book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages">
+            <fieldset role="radiogroup">
+                <legend>Read Book?</legend>
+                <label for="yes">
+                <input type="radio" name="read" id="yes" value="yes" checked>
+                <span>Yes</span>
+                </label>
+                <label for="no">
+                <input type="radio" name="read" id="no" value="no" >
+                <span>No</span>
+                </label>
+                <div class="button-group">
+                    <button id="submit">Submit</button>
+                    <button id="return">Return</button>
+                </div>
+            </fieldset>
+        </div>
+    </main>
+    <script src="new2.js"></script>
+</body>
+</html>
